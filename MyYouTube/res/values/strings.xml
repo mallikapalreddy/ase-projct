@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My YouTube</string>
+    <string name="forgot_password">&lt;u>Forgot Password&lt;/u></string>
+    <string name="search">Search</string>
+    <string name="failed">Failed to initialize Youtube Player</string>
+    <string name="spinner_title">Select Question:</string>
+    <string name="title_activity_dash_board">DashBoardActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

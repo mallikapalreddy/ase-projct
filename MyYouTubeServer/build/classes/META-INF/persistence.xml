@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="MyYouTubeServer">
+		<class>com.myyoutube.model.Search</class>
+		<class>com.myyoutube.model.User</class>
+
+		<properties>
+			<property name="javax.persistence.target-database" value="MYSQL" />
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.5.165.130:3306/myyoutube" />
+			<property name="javax.persistence.jdbc.user" value="adminQSwn8k6" />
+			<property name="javax.persistence.jdbc.password" value="Yt3ZC76jRZQ7" />
+			<property name="eclipselink.id-validation" value="NULL" />
+			<property name="eclipselink.ddl-generation" value="create-or-extend-tables" />
+			<property name="eclipselink.logging.level" value="INFO" />
+		</properties>
+	</persistence-unit>
+</persistence>
