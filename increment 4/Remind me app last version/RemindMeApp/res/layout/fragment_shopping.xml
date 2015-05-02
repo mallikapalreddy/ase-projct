@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AAFFFFFF" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textViewAdd"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:drawableLeft="@drawable/ic_action_new"
+            android:gravity="center"
+            android:text="Add a new list to the reminder"
+            android:textColor="#88000000" />
+
+        <TextView
+            android:id="@+id/textViewSearch"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:drawableLeft="@drawable/ic_action_search"
+            android:gravity="center"
+            android:text="Search an item on the store"
+            android:textColor="#88000000" />
+
+        <TextView
+            android:id="@+id/textViewDirection"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:drawableLeft="@drawable/ic_action_directions"
+            android:gravity="center"
+            android:text="Get direction to the store"
+            android:textColor="#88000000" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AAFFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layouth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/addButton"
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawableLeft="@drawable/ic_action_new"
+            android:drawableStart="@drawable/ic_action_new"
+            android:ems="7"
+            android:gravity="center"
+            android:text="Add a new Item" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/shppingItemList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layouth"
+        android:background="@drawable/listitemselector" >
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AAFFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layouth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/selectitemtext"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:drawableLeft="@drawable/ic_action_search"
+            android:ems="10"
+            android:hint="Item to Search "
+            android:paddingLeft="10dp"
+            android:scrollbars="none" />
+
+        <Button
+            android:id="@+id/search"
+            style="@style/button"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:ems="7"
+            android:gravity="center"
+            android:text="Search " />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/itemlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layouth"
+        android:background="@drawable/listitemselector" >
+    </ListView>
+
+</RelativeLayout>

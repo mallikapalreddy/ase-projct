@@ -1,0 +1,179 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_background"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/text"
+            android:drawableLeft="@drawable/ic_launcher"
+            android:gravity="center"
+            android:text="Remind Me" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AA000000"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewActivityTitle"
+                style="@style/text"
+                android:layout_marginTop="20dp"
+                android:text="Add Halt"
+                android:textSize="35sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#55000000"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#AAFFFFFF"
+                    android:visibility="invisible" >
+
+                    <requestFocus />
+                </EditText>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editStation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:background="#55000000"
+                        android:gravity="center_vertical"
+                        android:hint="Station "
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#AAFFFFFF" >
+
+                        <requestFocus />
+                    </EditText>
+
+                    <ImageView
+                        android:id="@+id/mapImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/maps_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editArrivaleTime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="#55000000"
+                        android:gravity="center_vertical"
+                        android:hint="Arrival Time "
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#AAFFFFFF" />
+
+                    <ImageView
+                        android:id="@+id/timeImageViewArrival"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/time_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editDepartureTime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="#55000000"
+                        android:gravity="center_vertical"
+                        android:hint="Departure Time "
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#AAFFFFFF" />
+
+                    <ImageView
+                        android:id="@+id/timeImageViewDeparture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/time_icon" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnRecorderHalt"
+                    style="@style/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Record your Reminder"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_add_update"
+                style="@style/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:ems="7"
+                android:text="Add" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

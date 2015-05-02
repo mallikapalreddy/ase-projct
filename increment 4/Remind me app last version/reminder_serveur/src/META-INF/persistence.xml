@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="reminder_serveur">
+		<class>com.remindme.model.Halt</class>
+		<class>com.remindme.model.Journey</class>
+		<class>com.remindme.model.Shopping</class>
+		<class>com.remindme.model.User</class>
+
+		<properties>
+			<property name="javax.persistence.target-database" value="MYSQL" />
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.11.42.2:3306/remindmeapp" />
+			<property name="javax.persistence.jdbc.user" value="admin7DnNclF" />
+			<property name="javax.persistence.jdbc.password" value="xkH--kiXHga9" />
+			<property name="eclipselink.id-validation" value="NULL" />
+			<property name="eclipselink.ddl-generation" value="create-or-extend-tables" />
+			<property name="eclipselink.logging.level" value="INFO" />
+		</properties>
+
+	</persistence-unit>
+</persistence>
